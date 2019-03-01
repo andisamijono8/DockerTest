@@ -47,4 +47,6 @@ High-level: Using automation we want to spin up an environment which will allow 
 2) Following the tutorial and absorbing the knowledge instead of blindly following was a fun challenge. The ibm tut and docker tut were very helpful.
 
 ## Further improvements : 
+1) SQL to have passwords
+2) There should be further potential improvements in the usage of docker
 
