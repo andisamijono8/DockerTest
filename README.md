@@ -27,7 +27,7 @@ https://hub.docker.com/editions/community/docker-ce-desktop-mac
 4) run command " docker-compose up "
 
 ## Plan of Action
-![Image of solution](https://github.com/andi23/DockerTest/blob/master/images/test.xml)
+![Image of solution](https://github.com/andi23/DockerTest/blob/master/images/Solution.png)
 
 1) I want to understand the requirements and the technology stack involved
   * Read and implement the Docker tutorial in the official page 
