@@ -5,13 +5,13 @@ services:
     links:
       - db
     ports:
-      - "8000:8000"
+      - "8080:8080"
 
   db:
     image: mysql:5.7
     ports:
       - "32000:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: Molly
     volumes:
       - ./db:/docker-entrypoint-initdb.d/:ro
