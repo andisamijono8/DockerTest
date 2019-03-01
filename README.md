@@ -55,7 +55,4 @@ https://hub.docker.com/editions/community/docker-ce-desktop-mac
 1) No experience in using containers so had to study for that.
 2) Following the tutorial and absorbing the knowledge instead of blindly following was a fun challenge. The ibm tut and docker tut were very helpful.
 
-## Further improvements : 
-1) SQL to have passwords
-2) There should be further potential improvements in the usage of docker
 
