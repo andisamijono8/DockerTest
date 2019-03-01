@@ -9,7 +9,7 @@ app = Flask(__name__)
 def student_dreams_listAll() -> List[Dict]:
     config = {
         'user': 'root',
-        'password': 'root',
+        'password': 'Molly',
         'host': 'db',
         'port': '3306',
         'database': 'students'

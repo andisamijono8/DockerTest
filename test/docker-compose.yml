@@ -12,6 +12,6 @@ services:
     ports:
       - "32000:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: Molly
     volumes:
       - ./db:/docker-entrypoint-initdb.d/:ro
