@@ -47,7 +47,7 @@ https://hub.docker.com/editions/community/docker-ce-desktop-mac
 2) Having created the sql model, I used the docker-compose.yml file with just the sql model and then connected to it using mysql -P 3306 --protocol=tcp -u root -p  . SQL queries can then be used to verify the data present.
 3) Now that the container for data model is working well, I started to build the web app using Flask. The web app will be able  to simply display the data in the mySQL database and is in a container.
 4) The containers are able to connect from the docker-compose.yml in which the Flask app is linked to the databse.
-5) Simply test out docker-compose up and then go to the link at http://0.0.0.0:8000/  to check results.
+5) Simply test out docker-compose up and then go to the link at http://0.0.0.0:8080/  to check results.
 
 ## Problems found
 1) No experience in using containers so had to study for that.
