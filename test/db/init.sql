@@ -9,6 +9,7 @@ CREATE TABLE student_dreams (
 INSERT INTO student_dreams
   (name, dream)
 VALUES
-  ('Rahul', 'Husband'),
-  ('Min Xue', 'Wife'),
-  ('Ethan', "Best Programmer");
+  ('Bear', 'Husband'),
+  ('Key', 'Wife'),
+  ('Hair', "Best Programmer"),
+  ('One-lined eyes', "Sun");
