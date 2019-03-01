@@ -1,5 +1,5 @@
 CREATE DATABASE students;
-use students;
+USE students;
 
 CREATE TABLE student_dreams (
   name VARCHAR(20),
