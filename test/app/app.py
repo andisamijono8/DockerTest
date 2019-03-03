@@ -14,13 +14,16 @@ def student_dreams_listAll() -> List[Dict]:
         'port': '3306',
         'database': 'students'
     }
-    connection = mysql.connector.connect(**config)
-    cursor = connection.cursor()
-    cursor.execute('SELECT * FROM student_dreams')
-    results = [{name: dream} for (name, dream) in cursor]
-    cursor.close()
-    connection.close()
-
+    try:
+        connection = mysql.connector.connect(**config)
+        cursor = connection.cursor()
+        cursor.execute('SELECT * FROM student_dreams')
+        results = [{name: dream} for (name, dream) in cursor]
+        cursor.close()
+        connection.close()
+    except mysql.connector.Error as err:
+        print("something went wrong:{}".format(err))
+        results = [{"Database is not up!": "Please check db!"}]
     return results
 
 
