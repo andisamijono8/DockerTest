@@ -20,6 +20,15 @@ High-level: Using automation we want to spin up an environment which will allow 
 ·         Running a simple web application to query and return data
 
 ## Requirements to run this
+
+### Docker-compose up for non load balanced
+1) Please install docker.
+https://hub.docker.com/editions/community/docker-ce-desktop-mac
+2) Clone the github repo git clone https://github.com/andi23/DockerTest.git
+3) Open terminal and cd to DockerTest/test/
+4) run command " docker-compose up "
+
+### For a load balanced app
 1) Please install docker.
 https://hub.docker.com/editions/community/docker-ce-desktop-mac
 2) Clone the github repo git clone https://github.com/andi23/DockerTest.git
@@ -42,7 +51,7 @@ https://hub.docker.com/editions/community/docker-ce-desktop-mac
   * Data tier -> MySQL
 3) I want to start with a containerised mySQL data tier and implement it.
 4) After having done the containerised data tier, I want to create the web tier using Flask deployed in a container.
-5) After having made connected Flask web tier and the data tier, is there anything I can do ?
+5) After having made connected Flask web tier and the data tier, is there anything I can do ? In a separate git branch "services", I made the app load balanced by scaling the services. 
 
 ## Journey in developing
 1) Begin with making the data tier. 2 ways to do this. Either from an existing SQL file with the database, table, thousands of rows of data like the ibm tut and then simply use docker-compose. Or simply create a new database, define the schema, add some data to the table. 
