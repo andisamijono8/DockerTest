@@ -27,13 +27,16 @@ https://hub.docker.com/editions/community/docker-ce-desktop-mac
 2) Clone the github repo git clone https://github.com/andi23/DockerTest.git
 3) Open terminal and cd to DockerTest/test/
 4) run command " docker-compose up "
+5) open a browser and hit "  http://localhost:8080/  "
 
 ### For a load balanced app
 1) Please install docker.
 https://hub.docker.com/editions/community/docker-ce-desktop-mac
 2) Clone the github repo git clone https://github.com/andi23/DockerTest.git
 3) Open terminal and cd to DockerTest/test/
-4) run command " docker-compose up "
+4) run command " ./services.sh " 
+ -if there is an error of "Permission denied" -> please run the command " chmod +x services.sh  " . This is to basically give permission to run the services.sh file.
+5) Open a browser and hit " http://localhost:8080/  "
 
 ## Plan of Action
 ![Image of solution](https://github.com/andi23/DockerTest/blob/master/images/Solution.png)
@@ -64,4 +67,16 @@ https://hub.docker.com/editions/community/docker-ce-desktop-mac
 1) No experience in using containers so had to study for that.
 2) Following the tutorial and absorbing the knowledge instead of blindly following was a fun challenge. The ibm tut and docker tut were very helpful.
 
+## How to stop and remove the containers 
+### Non- load balanced app
+1) Stop the containers ->  docker container stop $(docker container ls -a -q) 
+2) Remove the containers -> docker container rm $(docker container ls -a -q) 
+3) Remove the images ->  docker image rm $(docker image ls -a -q)
+4) Verify 
+ -- Docker container: docker container ls  
+ -- Docker image: docker image ls
+### For load-balanced app
+1) docker stack rm flaskMolly
+2) docker swarm leave --force
+3) docker swarm ls -> "This node is not a swarm manager ...."
 
